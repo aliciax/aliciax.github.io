@@ -1,0 +1,69 @@
+<!Doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Alicia Xu">
+    <!--line from here https://stackoverflow.com/questions/7859336/why-are-my-css3-media-queries-not-working-on-mobile-devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Findings Summary</title>
+    <!--
+        Style sheets
+            Normalize,fontawesome,fonts from google, owl carousel and mine
+    -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Unica+One|Vollkorn" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.2/devicon.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <!--
+        Javascript
+            jquery, owl carousel and mine
+    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <script src="extras.js"></script>
+</head>
+
+<body>
+
+    <div id="menu" onclick="w3_open()"> <i class="fa fa-bars fa-2x"></i></div>
+    <nav id="links">
+        <div id="close" onclick="w3_close()">Close</div>
+        <a href="index.html">Home</a>
+    </nav>
+    <div id="content">
+        <section id="textsection">
+            <h1>User Research</h1>
+            <a href="https://docs.google.com/a/uci.edu/spreadsheets/d/1DdXA-QOxhenUykNUk8DGqsGSf7gE5a4iNs8XN2rQUVE/edit?usp=sharing"><h2>User Interviews</h2></a>
+            <p>User interviews can be very important in understanding what a person expects from a portfolio. Depending on the interview, some may be more useful than others. You can find out what people expect, would want and their opinions on a similar product.</p>
+            <a href="https://docs.google.com/a/uci.edu/spreadsheets/d/1xPUSrEPRWzJPUPaU5WTeY6_j6HZofeLjXVrry2b3T1o/edit?usp=sharing"><h2>Competitor Analysis</h2></a>
+            <p>A competitor analysis is looking at people who are doing something similar and learning from those examples. The ones I chose were mixed. This allowed me to see generally where people my age compared to someone with more experience, particularly in design.</p>
+            <a href="https://docs.google.com/a/uci.edu/spreadsheets/d/1FXA2B9xcdJvQYB9X50h3fL2Rj_hH0Hq3p8PkqnFIw2k/edit?usp=sharing"><h2>Feature Value Matrix</h2></a>
+            <p>A feature value matrix is a matrix of features, rankings of valuability with values for both use and well as effort it takes to create. The features in particular I chose were ones that I believed I would use or knew were needed.</p>
+            <a href="https://docs.google.com/a/uci.edu/presentation/d/1jr8EjYyt5WzO7HAmnMx3eLU6YgepbBYtufSX4xDWyQU/edit?usp=sharing"><h2>Feature Prioritization</h2></a>
+            <p>I prioritized features by requirements. If it was required, then I made sure it was incorporated. For most of the others, I thought about what fit best into the layout, what I felt I needed the most and how easy it would be to create.</p>
+        </section>
+
+        <section id="textsection">
+            <h1>User Testing</h1>
+            <a href="https://docs.google.com/a/uci.edu/spreadsheets/d/1wN7UbJLgqsnzgtWDxIUyq4CWJP6zEaC0DfCM-msVYZA/edit?usp=sharing"><h2>User Stories</h2></a>
+            <p>User stores allows you to design for a certain person. You think of who would be using your product and what they would be looking for and their purpose. For some you might think of why would a person come to the site, others in here is a feature, who does it matter to. </p>
+            <a href="https://docs.google.com/a/uci.edu/spreadsheets/d/1WbLI_farn9aKm9PTcHsXtFFHOPwdPEYR8sjjzrfVfnM/edit?usp=sharing"><h2>Cognitive Walkthrough</h2></a>
+            <p>Cognitive walkthrough is getting a user to go through your site by giving them instructions to find elements. It allows you to see if something is confusing or difficult to understand for the user. A challenge is making good tests. Our websites are very simple which can make it difficult to create good questions.</p>
+            <h2>User Test</h2>
+            <p>There are many types of user tests from short to long. I ended up choosing short ones to make it easier to find participants. The main question I had for one of my tests is where would they click to see my experience. The biggest issue is I wanted to try avoid using the words to point to a section. Ultimately I failed and used skills, pointing all the testers to click on the skills section. Overall, users were able to see what the purpose of my page was and see my experience, even if I had hoped it was more random.<br><a href="https://usabilityhub.com/tests/2c8e1050662f/results/a0ea6973535">Results of Test 1</a> <a href="https://usabilityhub.com/tests/8c861b2cdcd9/results/c3475f1cb7f6">Results of Test 2</a></p>
+        </section>
+        <section id="textsection">
+            <h2>Summary of Findings</h2>
+            <p>When doing cognitive walkthroughs, I noticed improvements I could make and things I hadn't thought of.The biggest is the nav bar in mobile. I realized it wasn't stickied to the top, meaning if someone wasn't on the top of the page, they couldn't get to the navigation. Also while doing cognitive walkthoughs I realized the focus was off. My order of gallery, skills then experience didn't make sense. The focus shouldn't be on my design skills. It's not something I thought too much beforehand about but after a cognitive interview, I ended up rethinking.<br>The largest challenge I've had with getting these findings is writing good tests. It's hard to tell what I want people to focus on or what I really wanted to test on that didn't just show what I felt were flaws I already knew about. The biggest example was in the user click test. I wanted to see what experience was the most valuable but ended up accidently leading testers to a particular section because it was in the question.
+            </p>
+            <h2>Incorporation of Findings</h2>
+            <p>From the Cognitive walkthroughs, I changed the ordering of the sections. Also while making changes I realized I wrote my CSS file too catered to a single HTML file. It wasn't generic enough that I could just use the styles in multiple places. It's too late to change it now, but for the future and other projects, I'll be sure to keep that in mind. A big change that I didn't have time to impliment was the usability of the nav bar. It's hard to close on mobile and not intuitive. That's a fact I knew before user testing. Not only that but the sticky problem. Aside from that, I hope to one day add more content and give more background behind my experience. Right now there isn't enough background on what I've done. There isn't information about what I did, what I learned with each example. While I didn't test it, I'm sure users would have also wanted to click the links out of pure expectation to see more information. </p>
+        </section>
+    </div>
+</body>

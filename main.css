@@ -1,0 +1,362 @@
+/*
+All stylings were of my own work, biggest help/mini segment for a style goes to stackoverflow for center align via flexbox as well as w3 for rotate.
+*/
+
+
+/*
+
+Styles for general cases/background colors 
+
+*/
+
+html,
+body {
+    height: 100%;
+    font-family: font-family: 'Vollkorn', serif;
+    background-color: #EFEFEF;
+    text-align: center;
+    background-image: url(Photos/swirl_pattern.png);
+}
+
+a {
+    font-size: 1.500em;
+    color: #B8BAF9;
+}
+
+a:hover {
+    color: #332372;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Unica One', cursive;
+    color: #332372;
+}
+
+#heading h1 {
+    font-size: 7em;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 5em;
+    margin: 0;
+    padding: 2%;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.250em;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left,
+.right {
+    padding: 2%;
+}
+
+.left {
+    width: 50%;
+}
+
+.right {
+    width: 50%;
+}
+
+
+/*
+
+Styles for particular ids + classes 
+
+*/
+
+#skills,
+#experience {
+    padding: 2% 0;
+    /* top and bottom padding*/
+}
+
+#gallery,
+#skills {
+    background-color: #B8BAF9;
+}
+
+
+/*
+
+Sidebar
+
+*/
+
+#links {
+    position: fixed;
+    padding: 2% 1%;
+    height: 100%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+#links a,
+#close {
+    -ms-transform: rotate(-7deg);
+    -webkit-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+    text-decoration: none;
+    padding: .1em;
+    color: #EFEFEF;
+    font-family: 'Unica One', cursive;
+}
+
+#links a:hover {
+    color: #B8BAF9;
+}
+
+#menu {
+    float: left;
+}
+
+
+/*
+
+Top heading 
+
+*/
+
+#heading {
+    height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 12% 5% 12% 5%;
+}
+
+#heading img {
+    width: 95%;
+    border-radius: 100%;
+}
+
+.inside_c {
+    text-align: right;
+    align-content: center;
+}
+
+.inside_c h3 {
+    background-color: #130227;
+    color: #B8BAF9;
+    padding: 3% 2% 3%;
+    margin: 2% 0% 5% 2%;
+}
+
+.inside_c p {
+    padding-left: 5%;
+}
+
+#heading .left {
+    width: 35%;
+}
+
+#heading .right {
+    width: 65%;
+}
+
+
+/*
+SKILLS
+*/
+
+#skills {
+    padding-bottom: 5%;
+}
+
+#skills i {
+    font-size: 5em;
+    padding: 0.05em;
+}
+
+.row {
+    margin: 3%;
+}
+
+
+/* 
+
+Experience
+
+*/
+
+#list {
+    display: flex;
+    display: -webkit-flex;
+}
+
+#experience .left {
+    text-align: right;
+}
+
+#experience .right {
+    text-align: left;
+}
+
+.exp {
+    padding: 3% 0;
+}
+
+.exp h3 {
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
+}
+
+.year {
+    font-style: italic;
+}
+
+.filler {
+    width: 5px;
+    height: 500px;
+    background-color: #332372;
+}
+
+
+/*
+Gallery
+*/
+
+#gallery {
+    padding: 5% 5%;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+
+/* Took overlay from someplace online*/
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #332372;
+}
+
+.item:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#textsection {
+    padding: 5%;
+}
+
+
+/*
+
+footer
+
+*/
+
+footer {
+    text-align: center;
+    padding: 2em;
+}
+
+.fa {
+    padding: 0.125em
+}
+
+
+/*
+
+Media Queries
+
+*/
+
+@media screen and (min-width: 1221px) {
+    #links {
+        background-color: #332372;
+    }
+    #content {
+        margin-left: 12%;
+    }
+    #menu,
+    #close {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    #links {
+        display: none;
+    }
+    #experience .filler {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #heading {
+        padding: 10% 0 5%;
+    }
+    #heading,
+    #list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #experience .left,
+    #experience .right {
+        text-align: center;
+        width: 100%;
+    }
+    .left,
+    .right {
+        padding: 5% 0;
+    }
+    #experience .left {
+        padding: 5% 0 0 0;
+    }
+    #experience .right {
+        padding: 0 0 5% 0;
+    }
+}
+
+@media screen and (max-width:400px) {
+    h1 {
+        font-size: 4em;
+    }
+}
