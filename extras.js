@@ -62,15 +62,3 @@ $(document).ready(function () {
         }
     });
 });
-
-//to open nav and close nav credit w3
-function w3_open() {
-    document.getElementById("links").style.display = "flex";
-    document.getElementById("links").style.backgroundColor = "#332372";
-    document.getElementById("links").style.width = "50%";
-    document.getElementById("links").style.zIndex = "100";
-}
-
-function w3_close() {
-    document.getElementById("links").style.display = "none";
-}

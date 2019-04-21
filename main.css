@@ -2,7 +2,6 @@
 All stylings were of my own work, biggest help/mini segment for a style goes to stackoverflow for center align via flexbox as well as w3 for rotate.
 */
 
-
 /*
 
 Styles for general cases/background colors 
@@ -91,11 +90,11 @@ Styles for particular ids + classes
     /* top and bottom padding*/
 }
 
+/*
 #gallery,
 #skills {
     background-color: #B8BAF9;
-}
-
+}*/
 
 /*
 
@@ -145,8 +144,7 @@ Top heading
     display: -webkit-flex;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    padding: 12% 5% 12% 5%;
+    padding: 10% 5% 10% 5%;
 }
 
 #heading img {
@@ -297,66 +295,4 @@ footer {
 
 .fa {
     padding: 0.125em
-}
-
-
-/*
-
-Media Queries
-
-*/
-
-@media screen and (min-width: 1221px) {
-    #links {
-        background-color: #332372;
-    }
-    #content {
-        margin-left: 12%;
-    }
-    #menu,
-    #close {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 1220px) {
-    #links {
-        display: none;
-    }
-    #experience .filler {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    #heading {
-        padding: 10% 0 5%;
-    }
-    #heading,
-    #list {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    #experience .left,
-    #experience .right {
-        text-align: center;
-        width: 100%;
-    }
-    .left,
-    .right {
-        padding: 5% 0;
-    }
-    #experience .left {
-        padding: 5% 0 0 0;
-    }
-    #experience .right {
-        padding: 0 0 5% 0;
-    }
-}
-
-@media screen and (max-width:400px) {
-    h1 {
-        font-size: 4em;
-    }
 }
