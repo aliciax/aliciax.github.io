@@ -33,6 +33,10 @@ h3 {
     color: #332372;
 }
 
+#top-padding {
+    margin-top: 100px;
+}
+
 #heading h1 {
     font-size: 7em;
     margin: 0;
@@ -77,6 +81,9 @@ ul {
     width: 50%;
 }
 
+.row {
+    margin: 3%;
+}
 
 /*
 
@@ -84,52 +91,8 @@ Styles for particular ids + classes
 
 */
 
-#skills,
-#experience {
-    padding: 2% 0;
-    /* top and bottom padding*/
-}
-
-/*
-#gallery,
-#skills {
+section:nth-child(odd) {
     background-color: #B8BAF9;
-}*/
-
-/*
-
-Sidebar
-
-*/
-
-#links {
-    position: fixed;
-    padding: 2% 1%;
-    height: 100%;
-    width: 10%;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-}
-
-#links a,
-#close {
-    -ms-transform: rotate(-7deg);
-    -webkit-transform: rotate(-7deg);
-    transform: rotate(-7deg);
-    text-decoration: none;
-    padding: .1em;
-    color: #EFEFEF;
-    font-family: 'Unica One', cursive;
-}
-
-#links a:hover {
-    color: #B8BAF9;
-}
-
-#menu {
-    float: left;
 }
 
 
@@ -140,11 +103,10 @@ Top heading
 */
 
 #heading {
-    height: 100%;
+    height: 85%;
     display: -webkit-flex;
     display: flex;
     align-items: center;
-    padding: 10% 5% 10% 5%;
 }
 
 #heading img {
@@ -181,17 +143,9 @@ Top heading
 SKILLS
 */
 
-#skills {
-    padding-bottom: 5%;
-}
-
 #skills i {
     font-size: 5em;
     padding: 0.05em;
-}
-
-.row {
-    margin: 3%;
 }
 
 

@@ -14,6 +14,7 @@
             Normalize,fontawesome,fonts from google, owl carousel and mine
     -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Unica+One|Vollkorn" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
@@ -32,143 +33,164 @@
 </head>
 
 <body class="container">
-    <div id="content">
-        <section class="row" id="heading">
-            <div class="left col-4">
-                <img src="Photos/profile.jpg">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
             </div>
-            <div class="inside_c right col-">
-                <h1>Alicia Xu</h1>
-                <h3>Consultant</h3>
-                <p>I'm currently a consulant at Tallan LLC in California. I graduated UC Irvine in 2018 with a BA in Computer Science Major with an Information Specialization. This is mainly a place to show some of my love for design. I love design and have potentially more design examples here than software projects.</p>
-            </div>
-        </section>
-        <section id="gallery">
-            <h2>Gallery</h2>
-            <div class="owl-carousel owl-theme owl-loaded">
-                <div class="item"><img src="Photos/20527489_1623973534304090_50550571_n.png">
-                    <div class="overlay">
-                        <div class="text">HackUCI 2018 Logo</div>
-                    </div>
-                </div>
-                <div class="item"><img src="Photos/02.jpg">
-                    <div class="overlay">
-                        <div class="text">Daily UI Project: Check Out Page</div>
-                    </div>
-                </div>
-                <div class="item"><img src="Photos/03.jpg">
-                    <div class="overlay">
-                        <div class="text">Daily UI Project: Landing Page</div>
-                    </div>
-                </div>
-                <div class="item"><img src="Photos/panphletfront.png">
-                    <div class="overlay">
-                        <div class="text">KFEST(Korean Cultural Festival) Panphlet Outside</div>
-                    </div>
-                </div>
-                <div class="item"><img src="Photos/panphletinside.png">
-                    <div class="overlay">
-                        <div class="text">KFEST(Korean Cultural Festival) Panphlet Inside</div>
-                    </div>
-                </div>
-                <div class="item"><img src="Photos/WICS_week3_WICSGAMES.jpg">
-                    <div class="overlay">
-                        <div class="text">WICS Games Flyer</div>
-                    </div>
-                </div>
-                <div class="item"><img src="Photos/turtle.gif">
-                    <div class="overlay">
-                        <div class="text">Turtle Gif created by vectoring frame by frame for Arts 80T</div>
-                    </div>
-                </div>
-                <div class="item"><img src="Photos/still-motion.jpg">
-                    <div class="overlay">
-                        <div class="text">Turtle graphics from Arts 80T</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="row">
-                <i class="devicon-java-plain-wordmark colored"></i>
-                <i class="devicon-python-plain-wordmark colored"></i>
-
-                <i class="devicon-mysql-plain-wordmark colored"></i>
-
-                <i class="devicon-cplusplus-plain colored"></i>
-            </div>
-            <div class="row">
-                <i class="devicon-html5-plain-wordmark colored"></i>
-                <i class="devicon-css3-plain-wordmark colored"></i>
-                <i class="devicon-photoshop-plain colored"></i>
-                <i class="devicon-illustrator-plain colored"></i>
-            </div>
-
-
-
-        </section>
-        <section id="experience">
-            <h2>Experience</h2>
-            <div id="list">
-                <div class="left">
-                    <h3>Software</h3>
-                    <div class="exp">
-                        <h3>Tallan LLC</h3>
-                        <p class="overview">Consultant</p>
-                        <p class="year">July 2018-Present</p>
-                    </div>
-                    <div class="exp">
-                        <h3>Toshiba Business Solutions</h3>
-                        <p class="overview">Test Engineer (Internship)</p>
-                        <p class="year">September 2017-March 2018</p>
-                    </div>
-                    <div class="exp">
-                        <h3>SmileRun(Athena Hacks)</h3>
-                        <p class="overview">Organizer's Choice</p>
-                        <p class="year">February 2017</p>
-                    </div>
-                    <div class="exp">
-                        <h3>Fabflix(CS122B)</h3>
-                        <p class="overview">Project Course</p>
-                        <p class="year">Spring Quarter 2017</p>
-                    </div>
-                </div>
-                <div class="filler"></div>
-                <div class="right">
-                    <h3>Design</h3>
-
-                    <div class="exp">
-                        <h3>Hack</h3>
-                        <p class="overview">Designer</p>
-                        <p class="year">Spring 2017-2018</p>
-                    </div>
-                    <div class="exp">
-                        <h3>Women in Information and Computer Science</h3>
-                        <p class="overview">Designer & Committee Member </p>
-                        <p class="year">October 2014-2018</p>
-                    </div>
-
-                    <div class="exp">
-                        <h3>Konnect:Korean Cultural Club</h3>
-                        <p class="overview">Publicity/Graphics Chair </p>
-                        <p class="year">May 2015-May 2017</p>
-                    </div>
-                </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Porfolio</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
 
             </div>
+        </div>
+    </nav>
 
-        </section>
 
-        <footer id="footer">
-            <h2>Contact me</h2>
-            <a href="mailto:aliciaxu@yahoo.com"><i class="fa fa-envelope fa-2x"></i></a>
-            <a href="https://www.linkedin.com/in/aliciax/"><i class="fa fa-linkedin fa-2x"></i></a>
-            <a href="https://github.com/aliciax"><i class="fa fa-github fa-2x"></i></a>
-            <a href="AliciaXU_resume2017Summer.pdf" download><i class="fa fa-file-pdf-o fa-2x"></i></a>
+    <section class="row" id="heading">
+        <div class="col-md-4">
+            <img src="Photos/profileupdate.jpeg">
+        </div>
+        <div class="inside_c col-md-8">
+            <h1>Alicia Xu</h1>
+            <h3>Consultant</h3>
+            <p>I'm currently a consulant at Tallan LLC in California. I graduated UC Irvine in 2018 with a BA in Computer Science Major with an Information Specialization. This is mainly a place to show some of my love for design. I love design and have potentially more design examples here than software projects.</p>
+        </div>
+    </section>
+    <section class="row" id="gallery">
+        <h2>Gallery</h2>
+        <div class="owl-carousel owl-theme owl-loaded">
+            <div class="item"><img src="Photos/20527489_1623973534304090_50550571_n.png">
+                <div class="overlay">
+                    <div class="text">HackUCI 2018 Logo</div>
+                </div>
+            </div>
+            <div class="item"><img src="Photos/02.jpg">
+                <div class="overlay">
+                    <div class="text">Daily UI Project: Check Out Page</div>
+                </div>
+            </div>
+            <div class="item"><img src="Photos/03.jpg">
+                <div class="overlay">
+                    <div class="text">Daily UI Project: Landing Page</div>
+                </div>
+            </div>
+            <div class="item"><img src="Photos/panphletfront.png">
+                <div class="overlay">
+                    <div class="text">KFEST(Korean Cultural Festival) Panphlet Outside</div>
+                </div>
+            </div>
+            <div class="item"><img src="Photos/panphletinside.png">
+                <div class="overlay">
+                    <div class="text">KFEST(Korean Cultural Festival) Panphlet Inside</div>
+                </div>
+            </div>
+            <div class="item"><img src="Photos/WICS_week3_WICSGAMES.jpg">
+                <div class="overlay">
+                    <div class="text">WICS Games Flyer</div>
+                </div>
+            </div>
+            <div class="item"><img src="Photos/turtle.gif">
+                <div class="overlay">
+                    <div class="text">Turtle Gif created by vectoring frame by frame for Arts 80T</div>
+                </div>
+            </div>
+            <div class="item"><img src="Photos/still-motion.jpg">
+                <div class="overlay">
+                    <div class="text">Turtle graphics from Arts 80T</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="row" id="skills">
+        <h2>Skills</h2>
+        <div class="row">
+            <i class="devicon-java-plain-wordmark colored"></i>
+            <i class="devicon-python-plain-wordmark colored"></i>
+            <i class="devicon-mysql-plain-wordmark colored"></i>
+            <i class="devicon-cplusplus-plain colored"></i>
+            <i class="devicon-csharp-plain-wordmark colored"></i>
+            <i class="devicon-angularjs-plai colored"></i>
+        </div>
+        <div class="row">
+            <i class="devicon-html5-plain-wordmark colored"></i>
+            <i class="devicon-css3-plain-wordmark colored"></i>
+            <i class="devicon-photoshop-plain colored"></i>
+            <i class="devicon-illustrator-plain colored"></i>
+            <i class="devicon-dot-net-plain-wordmark colored"></i>
 
-        </footer>
-    </div>
+        </div>
+    </section>
+    <section class="row" id="experience">
+        <h2>Experience</h2>
+        <div id="list">
+            <div class="left">
+                <h3>Software</h3>
+                <div class="exp">
+                    <h3>Tallan LLC</h3>
+                    <p class="overview">Consultant</p>
+                    <p class="year">July 2018-Present</p>
+                </div>
+                <div class="exp">
+                    <h3>Toshiba Business Solutions</h3>
+                    <p class="overview">Test Engineer (Internship)</p>
+                    <p class="year">September 2017-March 2018</p>
+                </div>
+                <div class="exp">
+                    <h3>SmileRun(Athena Hacks)</h3>
+                    <p class="overview">Organizer's Choice</p>
+                    <p class="year">February 2017</p>
+                </div>
+                <div class="exp">
+                    <h3>Fabflix(CS122B)</h3>
+                    <p class="overview">Project Course</p>
+                    <p class="year">Spring Quarter 2017</p>
+                </div>
+            </div>
+            <div class="filler"></div>
+            <div class="right">
+                <h3>Design</h3>
+
+                <div class="exp">
+                    <h3>Hack</h3>
+                    <p class="overview">Designer</p>
+                    <p class="year">Spring 2017-2018</p>
+                </div>
+                <div class="exp">
+                    <h3>Women in Information and Computer Science</h3>
+                    <p class="overview">Designer & Committee Member </p>
+                    <p class="year">October 2014-2018</p>
+                </div>
+
+                <div class="exp">
+                    <h3>Konnect:Korean Cultural Club</h3>
+                    <p class="overview">Publicity/Graphics Chair </p>
+                    <p class="year">May 2015-May 2017</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer id="footer">
+        <h2>Contact me</h2>
+        <a href="mailto:aliciaxu@yahoo.com"><i class="fa fa-envelope fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/aliciax/"><i class="fa fa-linkedin fa-2x"></i></a>
+        <a href="https://github.com/aliciax"><i class="fa fa-github fa-2x"></i></a>
+        <a href="Alicia_Xu_resume2019Spring.pdf" download><i class="fa fa-file-pdf-o fa-2x"></i></a>
+
+    </footer>
+
 </body>
 
 </html>
