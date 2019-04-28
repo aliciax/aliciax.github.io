@@ -33,10 +33,6 @@ h3 {
     color: #332372;
 }
 
-#top-padding {
-    margin-top: 100px;
-}
-
 #heading h1 {
     font-size: 7em;
     margin: 0;
@@ -107,6 +103,7 @@ Top heading
     display: -webkit-flex;
     display: flex;
     align-items: center;
+    margin-top: 75px
 }
 
 #heading img {
@@ -250,3 +247,5 @@ footer {
 .fa {
     padding: 0.125em
 }
+
+@media(max-width:767px) {}
