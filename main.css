@@ -64,6 +64,10 @@ ul {
     margin: 0;
 }
 
+article {
+    padding: 10px;
+}
+
 .left,
 .right {
     padding: 2%;
@@ -87,7 +91,7 @@ Styles for particular ids + classes
 
 */
 
-section:nth-child(odd) {
+article:nth-child(odd) {
     background-color: #B8BAF9;
 }
 
@@ -99,11 +103,10 @@ Top heading
 */
 
 #heading {
-    height: 85%;
     display: -webkit-flex;
     display: flex;
     align-items: center;
-    margin-top: 75px
+    margin-top: 75px;
 }
 
 #heading img {
@@ -112,8 +115,9 @@ Top heading
 }
 
 .inside_c {
-    text-align: right;
+    text-align: center;
     align-content: center;
+    padding-bottom: 30px;
 }
 
 .inside_c h3 {
@@ -122,69 +126,6 @@ Top heading
     padding: 3% 2% 3%;
     margin: 2% 0% 5% 2%;
 }
-
-.inside_c p {
-    padding-left: 5%;
-}
-
-#heading .left {
-    width: 35%;
-}
-
-#heading .right {
-    width: 65%;
-}
-
-
-/*
-SKILLS
-*/
-
-#skills i {
-    font-size: 5em;
-    padding: 0.05em;
-}
-
-
-/* 
-
-Experience
-
-*/
-
-#list {
-    display: flex;
-    display: -webkit-flex;
-}
-
-#experience .left {
-    text-align: right;
-}
-
-#experience .right {
-    text-align: left;
-}
-
-.exp {
-    padding: 3% 0;
-}
-
-.exp h3 {
-    font-size: 1.5em;
-    padding: 0;
-    margin: 0;
-}
-
-.year {
-    font-style: italic;
-}
-
-.filler {
-    width: 5px;
-    height: 500px;
-    background-color: #332372;
-}
-
 
 /*
 Gallery
@@ -233,6 +174,49 @@ Gallery
 }
 
 
+
+/*
+SKILLS
+*/
+
+#skills i {
+    font-size: 5em;
+    padding: 5px;
+}
+
+/* 
+
+Experience
+
+*/
+
+/*
+#list {
+    display: flex;
+    display: -webkit-flex;
+}
+*/
+
+.exp {
+    padding: 3% 0;
+}
+
+.exp h3 {
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
+}
+
+.year {
+    font-style: italic;
+}
+
+.filler {
+    width: 5px;
+    height: 500px;
+    background-color: #332372;
+}
+
 /*
 
 footer
@@ -248,4 +232,26 @@ footer {
     padding: 0.125em
 }
 
-@media(max-width:767px) {}
+@media(min-width:767px) {
+    #heading {
+        height: 85%;
+
+    }
+    .inside_c {
+        text-align: right;
+        padding-bottom: 0px;
+
+    }
+
+    .inside_c p {
+        padding-left: 5%;
+    }
+    #software {
+        text-align: right;
+    }
+
+    #design {
+        text-align: left;
+    }
+
+}
