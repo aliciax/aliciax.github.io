@@ -95,6 +95,12 @@ article:nth-child(odd) {
     background-color: #B8BAF9;
 }
 
+.nav.navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 
 /*
 
@@ -179,9 +185,14 @@ Gallery
 SKILLS
 */
 
+#icon-container {
+    display: flex;
+}
+
 #skills i {
     font-size: 5em;
-    padding: 5px;
+    padding: 8px;
+    line-height: inherit;
 }
 
 /* 
@@ -190,12 +201,10 @@ Experience
 
 */
 
-/*
-#list {
-    display: flex;
-    display: -webkit-flex;
+#software > h3,
+#design > h3 {
+    text-decoration: underline;
 }
-*/
 
 .exp {
     padding: 3% 0;
@@ -209,12 +218,6 @@ Experience
 
 .year {
     font-style: italic;
-}
-
-.filler {
-    width: 5px;
-    height: 500px;
-    background-color: #332372;
 }
 
 /*
@@ -233,6 +236,10 @@ footer {
 }
 
 @media(min-width:767px) {
+    .navbar-nav {
+        float: none;
+    }
+
     #heading {
         height: 85%;
 
@@ -246,9 +253,12 @@ footer {
     .inside_c p {
         padding-left: 5%;
     }
+
     #software {
         text-align: right;
+        border-right: 5px #332372 solid;
     }
+
 
     #design {
         text-align: left;
